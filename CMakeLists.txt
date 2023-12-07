@@ -7,3 +7,4 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(string_composition string_composition.cpp)
 add_executable(string_spelled_by_genome_path string_spelled_by_genome_path.cpp)
+add_executable(overlap_graph_problem overlap_graph_problem.cpp)

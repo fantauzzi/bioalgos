@@ -10,7 +10,7 @@ string GenomePath(vector<string> path) {
 
     string res;
     for (const auto &kmer: path) {
-        res += (res.length() == 0) ? kmer : string(kmer, kmer.length() - 1, 1);
+        res += res.empty() ? kmer : string(kmer, kmer.length() - 1, 1);
     }
     return res;
 }
@@ -24,7 +24,6 @@ vector<string> load_dataset(string filePath) {
         res.emplace_back(s);
     }
     return res;
-
 }
 
 int main() {
